@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint . --ext .js,.jsx",
     "format": "prettier --write .",
-    "start": "npx live-server --open=calculator.html"
+    "start": "npx live-server --open=src/calculator.html"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
