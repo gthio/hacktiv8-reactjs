@@ -1,0 +1,22 @@
+{
+  "rates": [
+    {
+      "currency": "SEK",
+      "rate": 9.58193,
+      "buy": 8.62374,
+      "sell": 10.05902
+    },
+    {
+      "currency": "SGD",
+      "rate": 1.2829,
+      "buy": 1.15461,
+      "sell": 1.34604
+    },
+    {
+      "currency": "DKK",
+      "rate": 6.43165,
+      "buy": 5.78748,
+      "sell": 6.75323
+    }
+  ]
+}

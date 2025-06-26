@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241 102 52);
+  font-family: 1.5rem 'Courier New', Courier, monospace;
+  color: rgb(255 255 255);
+}
+
+.main-table {
+}
+
+.main-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-table th,
+.main-table td {
+  padding: 8px 16px;
+  text-align: right;
+}
+
+.main-table td:first-child,
+th:first-child {
+  text-align: left;
+}
+
+.main-table-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
