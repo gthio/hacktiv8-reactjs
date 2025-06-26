@@ -21,7 +21,7 @@ export default function MainPage({rates, stamp}) {
           <tbody>
 
             {rates.map(rate => (
-              <tr>
+              <tr key={rate.currency}>
                 <td>{rate.currency}</td>
                 <td>{rate.rate}</td>
                 <td>{rate.buy}</td>
