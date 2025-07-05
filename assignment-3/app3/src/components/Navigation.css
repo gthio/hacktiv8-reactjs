@@ -1,0 +1,59 @@
+.navigation-container {
+  background-color: rgb(241 102 52);
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-profile {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation-profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.navigation-profile-image img {
+  width: 125px;
+  height: 125px;
+}
+
+.navigation-profile-name {
+  color: white;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.navigation-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav div {
+  color: white;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+nav div:hover {
+  background-color: rgb(255 255 255 / 0.2);
+}
+
+nav div a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Makes the link inherit the color from its parent */
+}

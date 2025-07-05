@@ -1,0 +1,16 @@
+.page {
+  background-color: white;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.page-content {
+  padding: 20px;
+  text-align: left;
+  align-items: center;
+  justify-content: center; /* Optional: Center-align text */
+  width: 100%;
+}
