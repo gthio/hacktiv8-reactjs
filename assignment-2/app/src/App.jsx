@@ -8,11 +8,13 @@ function App() {
 
   const [rates, setRates] = useState([])
   const [stamp, setStamp] = useState([])
+  const [loading, setLoading] = useState(false)
 
   async function fetchRates() {
 
     try {
-      console.log('Fetching exchange rates...')
+
+      setLoading(true);
 
       let url = 'https://api.currencyfreaks.com/v2.0/rates/latest?apikey=c917dbdbe2b5457c89fdd7de49050529'
 
@@ -22,8 +24,6 @@ function App() {
       }
 
       const originalData = await response.json()
-
-      console.log('Exchange rates fetched successfully:', originalData)
 
       const filteredRate = Object.entries(originalData.rates)
       .filter(([currency]) => currencyList.includes(currency))
@@ -36,12 +36,12 @@ function App() {
 
       const sortedfilteredRate = filteredRate.sort((a, b) => a.currency.localeCompare(b.currency));
 
-      console.log('Exchange rates transformed successfully:', filteredRate);
-
       setRates(sortedfilteredRate);
       setStamp(new Date());
     } catch (error) {
       console.error('Error fetching exchange rates:', error)
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -55,7 +55,7 @@ function App() {
     return () => clearInterval(interval) // Cleanup on unmount
   }, [])
 
-  let content = <MainPage rates={rates} stamp={stamp} />
+  let content = <MainPage rates={rates} stamp={stamp} loading={loading} />
 
   return content
 }

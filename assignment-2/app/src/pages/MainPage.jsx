@@ -1,8 +1,12 @@
 import './MainPage.css';
 
-export default function MainPage({rates, stamp}) {
+export default function MainPage({rates, stamp, loading}) {
 
   const formattedStamp = new Date(stamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+  if (loading) {
+    return <div className='loading'>Loading...</div>;
+  }
 
   return (
     <>

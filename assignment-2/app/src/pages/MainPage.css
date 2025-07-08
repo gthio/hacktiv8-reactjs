@@ -34,3 +34,11 @@ th:first-child {
   justify-content: center;
   font-size: 0.8rem;
 }
+
+/* Loading indicator styles */
+.loading {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out infinite;
+}
