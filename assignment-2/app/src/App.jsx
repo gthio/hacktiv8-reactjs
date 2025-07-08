@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import MainPage from './pages/MainPage'
 
+
 let currencyList = ['CAD', 'EUR', 'IDR', 'JPY', 'CHF', 'GBP']
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
 
       setLoading(true);
 
-      let url = 'https://api.currencyfreaks.com/v2.0/rates/latest?apikey=c917dbdbe2b5457c89fdd7de49050529'
+      const apiKey = import.meta.env.VITE_CURRENCY_API_KEY;
+
+      const url = `https://api.currencyfreaks.com/v2.0/rates/latest?apikey=${apiKey}`
 
       const response = await fetch(url)
       if (!response.ok) {
