@@ -10,7 +10,7 @@ export default function Navigation() {
           <img src='/cat.svg' alt='Profile' />
         </div>
         <div className='navigation-profile-name'>
-          <span style={{fontweight:'bold', color:'yellow'}}>cutesy miso!</span>
+          <span style={{fontWeight:'bold', color:'yellow'}}>cutesy miso!</span>
         </div>
       </div>
       <div className='navigation-nav'>

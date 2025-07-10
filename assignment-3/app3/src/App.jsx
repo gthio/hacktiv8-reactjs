@@ -39,12 +39,7 @@ function App() {
 
             <Route
               path="/"
-              element={
-                <Page
-                  name={Object.keys(getJson())[0].charAt(0).toUpperCase() + Object.keys(getJson())[0].slice(1)}
-                  content={getJson()[Object.keys(getJson())[0]]}
-                />
-              }
+              element={<Page name="About" content={getJson().about} />}
             />
             {Object.keys(getJson()).map((key) => (
               <Route
